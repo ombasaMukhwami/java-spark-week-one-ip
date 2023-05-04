@@ -5,15 +5,15 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Cryptor {
+public class Cipher {
     private static final Set<Character> ALPHABETS = new HashSet<>(
             Arrays.asList('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'));
 
-    public Cryptor() {
+    public Cipher() {
         steps = 3;
     }
 
-    public Cryptor(int steps) {
+    public Cipher(int steps) {
         this.steps = steps;
     }
 
@@ -30,40 +30,10 @@ public class Cryptor {
 
     public String encrypt(String data) {
 
-        if (data == null || data.isEmpty() || data.length() == 1)  {
+        if (data == null || data.isEmpty() || data.length() == 1) {
             return data;
         }
 
-        char[] dataToProcess = data.toCharArray();
-        int length = dataToProcess.length;
-
-        StringBuilder rs = new StringBuilder();
-        for (int i = 0; i < length; i++) {
-
-            char currentCharacter = dataToProcess[i];
-            int currentPosition = ALPHABETS.stream().collect(Collectors.toList()).indexOf(currentCharacter);
-            if (currentPosition < 0) {
-                rs.append(currentCharacter);
-                continue;
-            }
-
-            int index = currentPosition - steps;
-            if (index < 0) {
-                index = 26 + index;
-            }
-
-            rs.append(ALPHABETS.toArray()[index]);
-
-        }
-
-
-        return rs.toString();
-    }
-
-    public String descrypt(String data) {
-        if (data == null || data.isEmpty() || data.length() == 1)  {
-            return data;
-        }
         char[] dataToProcess = data.toCharArray();
         int length = dataToProcess.length;
 
@@ -80,6 +50,36 @@ public class Cryptor {
             int index = currentPosition + steps;
             if (index > 25) {
                 index = index - 26;
+            }
+
+            rs.append(ALPHABETS.toArray()[index]);
+
+        }
+
+
+        return rs.toString();
+    }
+
+    public String descrypt(String data) {
+        if (data == null || data.isEmpty() || data.length() == 1) {
+            return data;
+        }
+        char[] dataToProcess = data.toCharArray();
+        int length = dataToProcess.length;
+
+        StringBuilder rs = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+
+            char currentCharacter = dataToProcess[i];
+            int currentPosition = ALPHABETS.stream().collect(Collectors.toList()).indexOf(currentCharacter);
+            if (currentPosition < 0) {
+                rs.append(currentCharacter);
+                continue;
+            }
+
+            int index = currentPosition - steps;
+            if (index < 0) {
+                index = 26 + index;
             }
 
             rs.append(ALPHABETS.toArray()[index]);
