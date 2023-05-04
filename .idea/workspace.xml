@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efc006df-c348-404a-bdef-8c45d4669a15" name="Changes" comment="test commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java" afterDir="false" />
+    <list default="true" id="efc006df-c348-404a-bdef-8c45d4669a15" name="Changes" comment="added test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/checkstyle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/checkstyle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ombasa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,8 +221,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.cryptor [check]" />
-        <item itemvalue="Gradle.cryptor [build]" />
         <item itemvalue="Gradle.CryptorTest" />
+        <item itemvalue="Gradle.cryptor [build]" />
         <item itemvalue="Gradle.CryptorTest.encrypt" />
       </list>
     </recent_temporary>
@@ -245,30 +243,38 @@
       <option name="project" value="LOCAL" />
       <updated>1683187865336</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added test">
+      <created>1683204282233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683204282233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
+    <MESSAGE value="added test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java</url>
-          <line>81</line>
+          <line>89</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java</url>
-          <line>58</line>
+          <line>66</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java</url>
-          <line>54</line>
+          <line>59</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -278,12 +284,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java</url>
-          <line>31</line>
+          <line>36</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java</url>
-          <line>24</line>
+          <line>26</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>

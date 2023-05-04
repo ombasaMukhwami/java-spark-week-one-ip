@@ -29,8 +29,13 @@ public class Cryptor {
     }
 
     public String encrypt(String data) {
+
+        if (data == null || data.isEmpty() || data.length() == 1)  {
+            return data;
+        }
+
         char[] dataToProcess = data.toCharArray();
-        int length = data.toCharArray().length;
+        int length = dataToProcess.length;
 
         StringBuilder rs = new StringBuilder();
         for (int i = 0; i < length; i++) {
@@ -56,8 +61,11 @@ public class Cryptor {
     }
 
     public String descrypt(String data) {
+        if (data == null || data.isEmpty() || data.length() == 1)  {
+            return data;
+        }
         char[] dataToProcess = data.toCharArray();
-        int length = data.toCharArray().length;
+        int length = dataToProcess.length;
 
         StringBuilder rs = new StringBuilder();
         for (int i = 0; i < length; i++) {
