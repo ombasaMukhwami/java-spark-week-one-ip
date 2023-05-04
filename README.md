@@ -1,4 +1,4 @@
-# java-spark-week-one-ip## project or program name
+# java-spark-week-one-ip#
  - Week class one project
 ## author name
  - Ombasa Geoffrey Mukhwami
