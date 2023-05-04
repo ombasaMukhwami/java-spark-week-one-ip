@@ -44,7 +44,7 @@ public final class Main {
                 case 2:
                     System.out.println("Enter text to decrypt: ");
                     data = myInput.nextLine();
-                    result = cipher.descrypt(data);
+                    result = cipher.decrypt(data);
                     System.out.println(result);
                     break;
                 default:

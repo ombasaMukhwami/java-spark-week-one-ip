@@ -46,21 +46,17 @@ public class Cipher {
                 rs.append(currentCharacter);
                 continue;
             }
-
             int index = currentPosition + steps;
             if (index > 25) {
                 index = index - 26;
             }
-
             rs.append(ALPHABETS.toArray()[index]);
-
         }
-
 
         return rs.toString();
     }
 
-    public String descrypt(String data) {
+    public String decrypt(String data) {
         if (data == null || data.isEmpty() || data.length() == 1) {
             return data;
         }
@@ -69,23 +65,18 @@ public class Cipher {
 
         StringBuilder rs = new StringBuilder();
         for (int i = 0; i < length; i++) {
-
             char currentCharacter = dataToProcess[i];
             int currentPosition = ALPHABETS.stream().collect(Collectors.toList()).indexOf(currentCharacter);
             if (currentPosition < 0) {
                 rs.append(currentCharacter);
                 continue;
             }
-
             int index = currentPosition - steps;
             if (index < 0) {
                 index = 26 + index;
             }
-
             rs.append(ALPHABETS.toArray()[index]);
-
         }
-
 
         return rs.toString();
     }
