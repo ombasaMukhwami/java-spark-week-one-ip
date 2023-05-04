@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efc006df-c348-404a-bdef-8c45d4669a15" name="Changes" comment="added test">
+    <list default="true" id="efc006df-c348-404a-bdef-8c45d4669a15" name="Changes" comment="handle null and empty string">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Helper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ombasa/CipherTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Cipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ombasa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -99,7 +102,7 @@
       <recent name="com.ombasa" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.cryptor [check]">
+  <component name="RunManager" selected="Application.cryptor">
     <configuration name="cryptor" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -128,6 +131,52 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.ombasa.CryptorTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CryptorTest.descrypt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.ombasa.CryptorTest.descrypt&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CryptorTest.descrypt_two" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.ombasa.CryptorTest.descrypt_two&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,27 +230,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="cryptor [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="check" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -214,16 +242,18 @@
     <list>
       <item itemvalue="Application.cryptor" />
       <item itemvalue="Gradle.CryptorTest" />
+      <item itemvalue="Gradle.CryptorTest.descrypt" />
+      <item itemvalue="Gradle.CryptorTest.descrypt_two" />
       <item itemvalue="Gradle.CryptorTest.encrypt" />
       <item itemvalue="Gradle.cryptor [build]" />
-      <item itemvalue="Gradle.cryptor [check]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.cryptor [check]" />
-        <item itemvalue="Gradle.CryptorTest" />
         <item itemvalue="Gradle.cryptor [build]" />
         <item itemvalue="Gradle.CryptorTest.encrypt" />
+        <item itemvalue="Gradle.CryptorTest.descrypt_two" />
+        <item itemvalue="Gradle.CryptorTest.descrypt" />
+        <item itemvalue="Gradle.CryptorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -250,47 +280,45 @@
       <option name="project" value="LOCAL" />
       <updated>1683204282233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="handle null and empty string">
+      <created>1683208183460</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683208183460</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test commit" />
     <MESSAGE value="added test" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test" />
+    <MESSAGE value="handle null and empty string" />
+    <option name="LAST_COMMIT_MESSAGE" value="handle null and empty string" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cipher.java</url>
           <line>89</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cipher.java</url>
           <line>66</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ombasa/Cryptor.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ombasa/CryptorTest.java</url>
-          <line>26</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/ombasa/CipherTest.java</url>
+          <line>27</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ombasa/CipherTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
