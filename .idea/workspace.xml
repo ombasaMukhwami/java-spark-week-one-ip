@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efc006df-c348-404a-bdef-8c45d4669a15" name="Changes" comment="fix the mismatch of functionality when selecting option fro descrypt on menu">
+    <list default="true" id="efc006df-c348-404a-bdef-8c45d4669a15" name="Changes" comment="renamed cipher decrypt method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ombasa/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Cipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ombasa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ombasa/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ombasa/CipherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ombasa/CipherTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
       <recent name="com.ombasa" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.cryptor">
+  <component name="RunManager" selected="Gradle.cryptor [build]">
     <configuration name="cryptor" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -301,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683222780608</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="renamed cipher decrypt method">
+      <created>1683223693351</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683223693351</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -311,7 +315,8 @@
     <MESSAGE value="handle null and empty string" />
     <MESSAGE value="complete the front end" />
     <MESSAGE value="fix the mismatch of functionality when selecting option fro descrypt on menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix the mismatch of functionality when selecting option fro descrypt on menu" />
+    <MESSAGE value="renamed cipher decrypt method" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed cipher decrypt method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
